@@ -93,7 +93,7 @@
       bindings = <&to RESET>;
     };
     combo_reset_layer_right {
-      key-positions = <30 34;
+      key-positions = <30 34>;
       bindings = <&to RESET>;
     };
     combo_reset_central {
