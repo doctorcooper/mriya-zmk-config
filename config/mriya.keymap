@@ -114,11 +114,11 @@
       bindings = <&to GAME>;
     };
     combo_esc {
-      key-positions = <1 2>;
+      key-positions = <2 3>;
       bindings = <&kp ESCAPE>;
     };
     combo_tab {
-      key-positions = <2 3>;
+      key-positions = <3 4>;
       bindings = <&kp TAB>;
       };
     combo_cdel {
