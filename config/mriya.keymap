@@ -3,9 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  
-#define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
-#define THUMBS 30 31 32 33 34 35
+#define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29  
+#define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35
+#define THUMBS 36 37 38 39 40 41
 
 #define DEF 0
 #define LWR 1
@@ -89,11 +89,11 @@
     require-prior-idle-ms = <250>;
 
     combo_reset_layer_left {
-      key-positions = <20 24>;
+      key-positions = <25 29>;
       bindings = <&to RESET>;
     };
     combo_reset_layer_right {
-      key-positions = <25 29>;
+      key-positions = <30 34;
       bindings = <&to RESET>;
     };
     combo_reset_central {
@@ -102,15 +102,15 @@
       require-prior-idle-ms = <2000>;
     };
     combo_normal {
-      key-positions = <7 8>;
+      key-positions = <8 9>;
       bindings = <&to DEF>;
     };
     combo_fn {
-      key-positions = <27 28>;
+      key-positions = <32 33>;
       bindings = <&sl FUNCTION>;
     };
     combo_game {
-      key-positions = <5 9>;
+      key-positions = <6 10>;
       bindings = <&to GAME>;
     };
     combo_esc {
@@ -122,20 +122,12 @@
       bindings = <&kp TAB>;
       };
     combo_cdel {
-      key-positions = <11 12>;
+      key-positions = <14 15>;
       bindings = <&kp LC(BACKSPACE)>;
     };
     combo_unlock {
-      key-positions = <0 4>;
+      key-positions = <1 5>;
       bindings = <&studio_unlock>;
-    };
-    combo_term1 {
-      key-positions = <20 21>;
-      bindings = <&kp LG(BSLH)>;
-    };
-    combo_term2 {
-      key-positions = <28 29>;
-      bindings = <&kp LG(GRAVE)>;
     };
   };
 
