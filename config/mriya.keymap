@@ -129,6 +129,14 @@
       key-positions = <1 5>;
       bindings = <&studio_unlock>;
     };
+    combo_term1 {
+      key-positions = <25 26>;
+      bindings = <&kp LG(BSLH)>;
+    };
+    combo_term2 {
+      key-positions = <33 34>;
+      bindings = <&kp LG(GRAVE)>;
+    };
   };
 
   keymap {
